@@ -40,7 +40,7 @@ cd Pinnacle_Scrape
 pip install -r requirements.txt
 ```
 
-or 
+or (for MacOS)
 
 ```
 pip3 install -r requirements.txt
@@ -53,7 +53,7 @@ pip3 install -r requirements.txt
 python main.py
 ```
 
-or 
+or (for MacOS)
 
 ```
 python3 main.py
