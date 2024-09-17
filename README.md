@@ -1,10 +1,10 @@
 # Web Scraping Pinnacle Football Matchups
 
-## Project Description
+## Description and Purpose of the Project
 This project scrapes the game spreads and corresponding team names for upcoming NFL and college football games from [Pinnacle.com](https://www.pinnacle.com/en/), which is renowned for providing some of the most accurate betting odds. By comparing Pinnacle's odds with those of other sportsbooks, customers can use the gathered data to discover positive Expected Value (EV) bets and steer clear of negative EV bets. The tool is especially helpful for sports bettors who want to base their choices on the best odds available in the market.
 
 ## Why did we choose Pinnacle?
-Pinnacle is a well-known sportsbook that focuses on providing precise lines that frequently outperform those of competitors.  Bettors, or anyone who is  interested to bet on the games can take advantage of this by:
+Pinnacle is a well-known sportsbook that focuses on providing precise lines that frequently outperform those of competitors.  Bettors, or anyone who is interested to bet on the games can take advantage of this by:
 - **Locating Positive EV Bets**: Examine your sportsbook's odds in comparison to Pinnacle's, and look for circumstances in which your sportsbook has more favorable odds than Pinnacle, indicating possible value.
 - **Avoid Negative EV Bets**: To lower the chance of placing a losing long-term wager, stay away from wagers where your sportsbook has odds that are lower than Pinnacle.
 
