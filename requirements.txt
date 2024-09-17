@@ -1,0 +1,5 @@
+Selenium
+beautifulsoup4
+webdriver-manager
+requests
+#Install chromedriver and copy path to "path" variable in main.py
