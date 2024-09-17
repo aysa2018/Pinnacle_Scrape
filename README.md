@@ -1,24 +1,64 @@
-# Pinnacle Football Scraper
+# Web Scraping Pinnacle Football Matchups
 
 ## Project Description
-This project scrapes upcoming NFL and college football game spreads and associated team names from Pinnacle.com, known for offering some of the most accurate betting odds. The collected data allows users to compare Pinnacle's odds with other sportsbooks, helping identify positive Expected Value (EV) bets or avoid negative EV bets. The tool is particularly valuable for sports bettors looking to make informed decisions based on market-leading odds.
+This project scrapes the game spreads and corresponding team names for upcoming NFL and college football games from [Pinnacle.com](https://www.pinnacle.com/en/), which is renowned for providing some of the most accurate betting odds. By comparing Pinnacle's odds with those of other sportsbooks, customers can use the gathered data to discover positive Expected Value (EV) bets and steer clear of negative EV bets. The tool is especially helpful for sports bettors who want to base their choices on the best odds available in the market.
 
-## Why Pinnacle?
-Pinnacle is a highly regarded sportsbook, offering sharp lines that are often more accurate than those of competitors. By using this scraper, bettors can access Pinnacle's spreads to:
-- **Find Positive EV Bets**: Compare Pinnacle's odds to your sportsbook and find situations where your sportsbook offers better odds than Pinnacle, suggesting potential value.
-- **Avoid Negative EV Bets**: Avoid bets where your sportsbook has worse odds than Pinnacle, reducing the likelihood of making a losing wager in the long term.
+## Why did we choose Pinnacle?
+Pinnacle is a well-known sportsbook that focuses on providing precise lines that frequently outperform those of competitors.  Bettors, or anyone who is  interested to bet on the games can take advantage of this by:
+- **Locating Positive EV Bets**: Examine your sportsbook's odds in comparison to Pinnacle's, and look for circumstances in which your sportsbook has more favorable odds than Pinnacle, indicating possible value.
+- **Avoid Negative EV Bets**: To lower the chance of placing a losing long-term wager, stay away from wagers where your sportsbook has odds that are lower than Pinnacle.
+
+## Features
+- Scrapes football matchups from Pinnacle.
+- Retrieves team names and their respective odds.
+- Uses Selenium to handle dynamic page content that is rendered by JavaScript.
+- Ensures the webpage is fully loaded before scraping by using explicit waits.
+
+## Requirements
+- Python 3.x
+- Google Chrome browser installed
+- ChromeDriver (automatically managed by webdriver_manager)
 
 ## Data Collected
 The scraper retrieves the following data for each football game:
 - **Team Names**: The two teams playing in each upcoming game.
 - **Spread Odds**: The point spread odds for both teams.
 
-## How to Run
-To run this project, follow these steps:
+## Installation
 
-1. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-    
----
+1. Clone the repository: (Type the following on your terminal)
+
+```
+git clone https://github.com/aysa2018/Pinnacle_Scrape
+cd Pinnacle_Scrape
+
+```
+
+2. Install the required dependencies:(Type the following on your terminal)
+
+```
+pip install -r requirements.txt
+```
+
+or 
+
+```
+pip3 install -r requirements.txt
+```
+
+## How to Run
+
+1. Execute the script: (Type the following on your terminal)
+```
+python main.py
+```
+
+or 
+
+```
+python3 main.py
+```
+
+
+
+
