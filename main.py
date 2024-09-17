@@ -25,20 +25,27 @@ def scrape(url):
     soup = BeautifulSoup(data, 'html.parser')
     return soup
 
+#Create a function to scrape the odds for each football game from tthe provided BeautifulSoup object
 def scrapeOdds(soup):
-    #Scraping the handicap for each football game on Pinnacle that is not live 
+    #Scrape the handicap for each football game on Pinnacle that is not live 
     allOdds = soup.find_all('span', class_='label-e0291710e17e8c18f43f')
+
+    # Extract the text content from each span, strips unnecessary whitespace, and stores them in a list
     odds = [item.text.strip() for item in allOdds]
     return odds
 
+# Create a function to scrape the team names for each game from the provided BeautifulSoup object
 def scrapeTeams(soup):
-    #Scraping the team names for all the games where we are scraping odds
+    #Scrape the team names for all the games where we are scraping odds
     allTeams = soup.find_all('span', class_='ellipsis event-row-participant participant-e4bea5402c4da811c6b7')
+
+     # Extracts the text content from each span, strips unnecessary whitespace, and stores them in a list
     teams = [item.text.strip() for item in allTeams]
     return teams
 
+# Create a function  to display the teams and odds lists in pairs 
 def display_matchups(teams, odds):
-    # Ensure teams and odds are grouped in pairs
+    # Print teams and odds are grouped in pairs
     for i in range(0, len(teams), 2):
         team1 = teams[i]
         team2 = teams[i + 1]
@@ -46,10 +53,14 @@ def display_matchups(teams, odds):
         odd2 = odds[i + 1]
         print(f"{team1} vs {team2}: {odd1}, {odd2}")
 
+#Create the main function
 def main ():
+    # Define the URL for the Pinnacle football matchups page
     url = "https://www.pinnacle.com/en/football/matchups/"
     soup = scrape(url)
     games = soup.find_all('div', class_='row-d92d06fbd3b09cc856bc')
+
+    # Loop through each game found on the page
     for game in games:
         odds = scrapeOdds(game)
         teams = scrapeTeams(game)
