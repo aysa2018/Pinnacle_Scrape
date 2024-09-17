@@ -2,7 +2,7 @@
 
 ## Purpose and Intent
 
-This project involves scraping publicly accessible data from Pinnacle for **educational purposes only**. The goal is to provide users with more information to help them make educated decisions when placing bets. It is not designed to exploit any individual or party, nor does it facilitate unfair practices or gain.
+This project is intended to scrape publicly available data from Pinnacle for **educational purposes only**. The main objective is to provide users with relevant data so they may make educated decisions when betting. The initiative has no intention of taking advantage of people or organizations, facilitating unfair advantages in gambling, or endorsing any unethical behavior.
 
 ## Respect for Website Policies
 
@@ -15,8 +15,8 @@ The scraping script strictly adheres to Pinnacle's `robots.txt` guidelines. Spec
 
 ## Responsible Data Usage
 
-- **No Personal Data:** The scraping process does not access or collect any personal or sensitive data.
-- **Single Page Load:** To minimize server load and respect Pinnacle's resources, the webpage is scraped only **once per session**. This ensures responsible use of web infrastructure and avoids server overloading.
+- **No Personal Data Collection:** The scraping process is strictly limited to public information and does not access, store, or interact with any personal or sensitive data.
+- **Minimal Server Load:** The script scrapes the webpage **only once per session** to minimize server load and respect Pinnacle's resources. This responsible usage helps prevent undue strain on their web infrastructure.
 
 ## Educational and Fair Use
 
